@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const home = () => import('../views/home/index.vue')
 const blog = () => import('../views/blog/index.vue')
-const chat = () => import('../views/videochat/index.vue')
+// const chat = () => import('../views/videochat/index.vue')
 const chatp2p = () => import('../views/videochat/chatp2p.vue')
 // const detail = () => import('../views/detail/index.vue')
 // const notFound = () => import('../views/404/index.vues')
@@ -25,14 +25,14 @@ const router = createRouter({
       },
       component: home
     },
-    {
-      path: '/chat',
-      name: 'chat',
-      meta: {
-        title: '聊天'
-      },
-      component: chat
-    },
+    // {
+    //   path: '/chat',
+    //   name: 'chat',
+    //   meta: {
+    //     title: '聊天'
+    //   },
+    //   component: chat
+    // },
     {
       path: '/chatp2p',
       name: 'chatp2p',
