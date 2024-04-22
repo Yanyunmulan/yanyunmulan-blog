@@ -9,7 +9,7 @@ const pc = new RTCPeerConnection({
 
 // 创建本地和远端的空媒体流
 let localStream: MediaStream
-let remoteStream: MediaStream
+// let remoteStream: MediaStream
 
 const offerSdp = ref('')
 const answerSdp = ref('')
