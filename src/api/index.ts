@@ -1,6 +1,6 @@
 import axios from 'axios'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError, InternalAxiosRequestConfig } from 'axios'
-import NProgress from '@/utils/nprogress'
+// import NProgress from '@/utils/nprogress'
 
 const env = import.meta.env //环境变量
 const isUseProxy = env.VITE_OPEN_PROXY //是否开启代理
@@ -20,7 +20,7 @@ export class Request {
     /* 请求拦截 */
     this.instance.interceptors.request.use(
       (config: InternalAxiosRequestConfig) => {
-        NProgress.start()
+        // NProgress.start()
         return config
       },
       (err: AxiosError) => {
@@ -36,10 +36,10 @@ export class Request {
           //成功
         } else {
           ElMessage.error(message)
-          NProgress.done()
+          // NProgress.done()
           return Promise.reject(response.data)
         }
-        NProgress.done()
+        // NProgress.done()
         return response.data
       },
       (err: AxiosError) => {
