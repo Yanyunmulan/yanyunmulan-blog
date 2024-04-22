@@ -1,0 +1,108 @@
+:root {
+  --base-color: black;
+
+  // —————————————————————————— 覆盖Element —————————————————————————— //
+
+  --el-transition-duration: 0; //过渡
+  --el-transition-duration-fast: 0 !important; //过渡
+
+  // —————————————————————————— Blog页面 —————————————————————————— //
+
+  --blog-backgorund: #eee; //整体背景颜色
+  --boxShadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12); //boxShadow
+
+  /**
+   * 侧边栏
+   */
+
+  --blog-block-backgorund: white; //块背景颜色
+  --logo-backgorund: #222222; //logo背景颜色
+
+  /**
+   * 侧边栏：Header
+   */
+
+  --blog-header-border: #222222;
+
+  /**
+   * 侧边栏: Config
+   */
+
+  --blog-config-header-bg: white; //背景颜色
+  --blog-config-header-border: rgba(0, 0, 0, 0.24); //border颜色
+  --blog-config-submit-color: white; //submit按钮文字颜色
+  --blog-config-submit-bg: #222222; //submit按钮背景颜色
+  --blog-config-sort-border: #dcdfe6; //sort边框颜色
+  --blog-config-sort-color: black; //sort文字颜色
+
+  /**
+   * 侧边栏导航
+   */
+
+  --blog-nav-color: black; //导航文字颜色
+  --blog-nav-hover-bg: #f5f5f5; //导航hover颜色
+  --blog-nav-border: #e0e0e0; //移动端导航边框颜色
+
+  // —————————————————————————— article组件 —————————————————————————— //
+
+  --blog-article-item-bg: white; //article-item 背景颜色
+  --blog-article-item-title-color: black; // article-item title文字颜色
+
+  // —————————————————————————— detail页面 —————————————————————————— //
+
+  --detail-bg: white; //背景颜色
+  --detail-header-bg: white; //header背景颜色
+  --detail-header-border: #dcdfe6; //border颜色
+  --detail-header-bg-img: radial-gradient(transparent 1px, var(--detail-header-bg) 1px); //header背景图片
+  --detail-content-bg: white; //content背景颜色
+  --detail-content-color: black; //content文字颜色
+
+  /**
+   * markdown github主题
+   */
+
+  --detail-md-github-code-bg: #f6f8fa;
+
+  // —————————————————————————— themeSwitch组件 —————————————————————————— //
+
+  --theme-switch-color: black;
+
+  // —————————————————————————— home页面 —————————————————————————— //
+  --home-backgorund: linear-gradient(
+      339deg,
+      rgba(47, 47, 47, 0.02) 0%,
+      rgba(47, 47, 47, 0.02) 42%,
+      transparent 42%,
+      transparent 99%,
+      rgba(17, 17, 17, 0.02) 99%,
+      rgba(17, 17, 17, 0.02) 100%
+    ),
+    linear-gradient(
+      257deg,
+      rgba(65, 65, 65, 0.02) 0%,
+      rgba(65, 65, 65, 0.02) 11%,
+      transparent 11%,
+      transparent 92%,
+      rgba(53, 53, 53, 0.02) 92%,
+      rgba(53, 53, 53, 0.02) 100%
+    ),
+    linear-gradient(
+      191deg,
+      rgba(5, 5, 5, 0.02) 0%,
+      rgba(5, 5, 5, 0.02) 1%,
+      transparent 1%,
+      transparent 45%,
+      rgba(19, 19, 19, 0.02) 45%,
+      rgba(19, 19, 19, 0.02) 100%
+    ),
+    linear-gradient(
+      29deg,
+      rgba(28, 28, 28, 0.02) 0%,
+      rgba(28, 28, 28, 0.02) 33%,
+      transparent 33%,
+      transparent 40%,
+      rgba(220, 220, 220, 0.02) 40%,
+      rgba(220, 220, 220, 0.02) 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
